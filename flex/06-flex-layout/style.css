@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction:column;
+  /*add -reverse for reading in australia*/
 }
 
 img {
@@ -16,11 +19,45 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding:8px;
 }
 
 input {
   border: 1px solid #ddd;
-  border-radius: 16px;
+  border-radius: 32px;
   padding: 8px 24px;
   width: 400px;
+  
+}
+
+a{
+  text-decoration:none;
+  color: rgb(51, 50, 50);
+}
+
+ul {
+  list-style-type: none;
+  display:flex;
+  gap: 16px;
+}
+
+.header,.footer{
+  display:flex;
+  justify-content:space-between;
+  gap: 16px;
+  padding:8px;
+}
+
+.footer{
+  background-color:#EEEEEE;
+}
+
+.content{
+  display:flex;
+  flex:1;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:13px;
+  /*if I was to make every gap a power of 4 then just leave one element a prime, would a web developer subconciously notice?*/
 }
